@@ -49,7 +49,10 @@ ui <- fixedPage(
            tags$footer("Simon Dufour")
            ),
     column(4,
-           tags$a(href="simon.dufour@umontreal.ca", "simon.dufour@umontreal.ca")
+           actionButton(inputId = "simon.dufour@umontreal.ca", 
+                        icon = icon("envelope", lib = "font-awesome"), 
+                        a("Contact me", 
+                          href="mailto:simon.dufour@umontreal.ca"))
            ),
     column(4,
            tags$a(href="https://www.oplait.org/", "www.oplait.org")
