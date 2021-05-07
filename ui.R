@@ -49,7 +49,7 @@ ui <- fixedPage(
            tags$footer("Simon Dufour")
            ),
     column(4,
-           actionButton(inputId = "simon.dufour@umontreal.ca", 
+           actionButton(inputId = "emailbutton", 
                         icon = icon("envelope", lib = "font-awesome"), 
                         a("Contact me", 
                           href="mailto:simon.dufour@umontreal.ca"))
