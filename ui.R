@@ -44,7 +44,20 @@ ui <- fixedPage(
         ))
     ),
     
+    #Add the reactive textbox
+    
+    fluidRow(
+      column(4,
+        selectInput("select",
+                       "Choose a value:",
+                       choices = list("Choice 1"=1, "Choice 2"=2, "Choice 3"=3))),
+      column(4,
+             textOutput("display")
+            )
+           ),
+    
     #Add a footer row with 3 even columns
+    fluidRow(
     column(4,
            tags$footer("Simon Dufour")
            ),
@@ -57,7 +70,7 @@ ui <- fixedPage(
     column(4,
            tags$a(href="https://www.oplait.org/", "www.oplait.org")
            )
-    
+    )
     
   )
 )

@@ -20,4 +20,9 @@ server <- function(input, output) {
     # draw the histogram with the specified number of bins
     hist(x, breaks = bins, col = 'pink', border = 'white')
   })
+  
+  #Add a reactive text box
+  output$display <- renderText(
+    paste("Chosen value = ", input$select)
+  )
 }
