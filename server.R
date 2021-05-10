@@ -21,8 +21,5 @@ server <- function(input, output) {
     hist(x, breaks = bins, col = 'pink', border = 'white')
   })
   
-  #Add a reactive text box
-  output$display <- renderText(
-    paste("Chosen value = ", input$select)
-  )
+ 
 }
